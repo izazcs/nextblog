@@ -4,14 +4,18 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Next App',
-  description: 'Next.js starter app',
+  title: 'Khan Blog 2',
+  description: 'The second blog i am creating with Next Js',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+        <div>THis is main layout</div>
+        {children}
+      </body>
     </html>
   )
 }
